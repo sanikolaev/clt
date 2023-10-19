@@ -34,6 +34,8 @@ runs:
   steps:
     - name: Checkout the calling repo
       uses: actions/checkout@v4
+      with:
+        ref: '${{ github.ref }}'
 
     - name: Checkout CLT
       uses: actions/checkout@v4
